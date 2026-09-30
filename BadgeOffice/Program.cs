@@ -48,15 +48,15 @@ int seconds = totalseconds % 60;
 System.Console.WriteLine($"Estimated walking time {minitues} Minutes and {seconds} seconds");
 System.Console.WriteLine("");
 
-
+Console.WriteLine("WALK: {minitues} min {seconds} sec".PadLeft(10));
 // The Badge
 Console.WriteLine("==================================");
 Console.WriteLine("        ETSU STUDENT BADGE        ");
 Console.WriteLine("==================================");
-Console.WriteLine($"NAME: " + rawname.ToString().PadLeft(6));
-Console.WriteLine($"USERNAME: "+ lowername.ToString().PadLeft(2));
-Console.WriteLine($"ID: " + studentid.ToString(AbandonedMutexException).PadLeft(8));
+Console.WriteLine("NAME: " + rawname.ToString().PadLeft(6));
+Console.WriteLine("USERNAME: "+ lowername.ToString().PadLeft(2));
+Console.WriteLine("ID: " + studentid.ToString().PadLeft(8));
 double id = studentid / 9;
-Console.WriteLine($"LOCKER: " + Locker.ToString().PadLeft(4));
-Console.WriteLine($"WALK: {minitues} min {seconds} sec".PadLeft(10));
+Console.WriteLine("LOCKER: " + Locker.ToString().PadLeft(4));
+Console.WriteLine("WALK: {minitues} min {seconds} sec".PadLeft(10));
 Console.WriteLine("==================================");
