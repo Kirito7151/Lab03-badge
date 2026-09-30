@@ -1,4 +1,14 @@
-﻿// Part 1
+﻿/*
+* Name: Jonathan Parkhurst
+* Course: CSCI 1250, Section 001
+* Assignment: Lab 03, The Badge Office
+* Date: September 30, 2026
+* Description: Builds a student badge from a name, two random assignments,
+and the walking distance to a first class.
+*/
+
+
+// Part 1
 Console.Write("What is your first and last name? ");
 string rawname = Console.ReadLine();
 rawname = rawname.Trim();
@@ -47,16 +57,15 @@ int minitues = totalseconds / 60;
 int seconds = totalseconds % 60;
 System.Console.WriteLine($"Estimated walking time {minitues} Minutes and {seconds} seconds");
 System.Console.WriteLine("");
-
-Console.WriteLine("WALK: {minitues} min {seconds} sec".PadLeft(10));
+double keep = studentid / 9;
+// Console.WriteLine("WALK: {minitues} min {seconds} sec".PadLeft(10));
 // The Badge
 Console.WriteLine("==================================");
 Console.WriteLine("        ETSU STUDENT BADGE        ");
 Console.WriteLine("==================================");
-Console.WriteLine("NAME" + rawname.ToString().PadLeft(6));
-Console.WriteLine("USERNAME"+ lowername.ToString().PadLeft(2));
-Console.WriteLine("ID" + studentid.ToString().PadLeft(8));
-double id = studentid / 9;
-Console.WriteLine("LOCKER" + Locker.ToString().PadLeft(4));
-Console.WriteLine($"WALK" {minitues} "min" {seconds} "sec".PadLeft(10));
+Console.WriteLine($"NAME       {rawname}");
+Console.WriteLine($"USERNAME   {lowername}");
+Console.WriteLine($"ID         {keep}");
+Console.WriteLine($"LOCKER     {Locker}");
+Console.WriteLine($"WALK       {minitues} min {seconds} sec");
 Console.WriteLine("==================================");
