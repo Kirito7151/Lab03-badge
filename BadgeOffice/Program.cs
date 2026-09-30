@@ -58,5 +58,5 @@ Console.WriteLine("USERNAME: "+ lowername.ToString().PadLeft(2));
 Console.WriteLine("ID: " + studentid.ToString().PadLeft(8));
 double id = studentid / 9;
 Console.WriteLine("LOCKER: " + Locker.ToString().PadLeft(4));
-Console.WriteLine("WALK: {minitues} min {seconds} sec".PadLeft(10));
+Console.WriteLine($"WALK: {minitues} min {seconds} sec".PadLeft(10));
 Console.WriteLine("==================================");
