@@ -38,6 +38,18 @@ double walkspeed = Convert.ToDouble(Console.ReadLine());
 
 Math.Sqrt(Math.Pow(dormx - classx,2) + Math.Pow(dormy - classy, 2));
 double distance = Math.Sqrt(Math.Pow(dormx - classx,2) + Math.Pow(dormy - classy, 2));
-double totalseconds = distance / walkspeed;
-double tripinseconds = Math.Round(totalseconds,0);
+System.Console.WriteLine($"Distance: {distance:F1} Feet");
+int totalseconds = (int)Math.Round(distance / walkspeed);
+int minitues = totalseconds / 60;
+int seconds = totalseconds % 60;
+System.Console.WriteLine($"Estimated walking time {minitues} Minutes and {seconds} seconds");
 
+Console.WriteLine("==================================");
+Console.WriteLine("        ETSU STUDENT BADGE        ");
+Console.WriteLine("==================================");
+Console.WriteLine($"NAME: {rawname}");
+Console.WriteLine($"USERNAME: {username}");
+Console.WriteLine($"ID: {studentid}");
+Console.WriteLine($"LOCCKER: {Locker}");
+Console.WriteLine($"WALK: {}");
+Console.WriteLine("==================================");
